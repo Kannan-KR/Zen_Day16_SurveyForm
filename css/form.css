@@ -1,0 +1,76 @@
+* {
+  font-family: Didot, serif;
+}
+.container {
+  padding-bottom: 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin: 20px auto;
+  background-color: aliceblue;
+}
+
+/* Label - Bold */
+.form-label {
+  font-weight: bold;
+}
+
+/* Aligning first name and last name on the same line */
+.name_inp {
+  display: flex;
+  gap: 15px;
+  width: 60%;
+}
+
+/* First, Last */
+.name_label {
+  font-size: 10px;
+}
+
+/* Email width */
+#email {
+  width: 60%;
+}
+
+/* Star rating */
+
+.rating > input {
+  display: none; /* Hide radio buttons */
+}
+
+.rating > label:before {
+  content: "☆";
+  font-size: 35px;
+}
+
+.rating > label {
+  color: rgb(220, 220, 220); /* Start color when not clicked */
+}
+
+.rating > input:checked ~ label {
+  color: darkorange; /* Set yellow color when clicked */
+}
+
+/* Tabel header - normal */
+th {
+  font-weight: normal;
+}
+
+/* Aligning top header and data to the center */
+td,
+.thead-1 {
+  text-align: center;
+}
+
+/* Table stripes */
+.table > tbody > tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* *mark for required fields */
+.required-field::after {
+  content: "*";
+  color: red;
+}
